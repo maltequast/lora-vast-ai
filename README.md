@@ -5,11 +5,11 @@ This repo is for documentation purposes.
 Prerequisistes:
 - vast.ai account
 - 10-15 images
-- labels with descriptions as txt files
+- labels with descriptions as txt files (in txt labels I always used "[trigger]")
 
 
 ### Training
-Start a vast.ai container with enough GPU ram. At least for vast.ai it was helpful to use directly a pytorch template with cuda installed. For the installation follow the instructions: https://github.com/ostris/ai-toolkit for FLUX.1 Training. 
+Start a vast.ai container with enough GPU ram. At least for vast.ai it was helpful to use directly a pytorch template with cuda installed. For the installation follow the [instructions](https://github.com/ostris/ai-toolkit) for FLUX.1 Training. 
 
 I needed to install another package:
 
@@ -35,5 +35,11 @@ My repo uses the flux schnell weights.
 At least for me with around 10-15 images it took me around 3 hours to train the lora models (with around 4 epochs).
 
 ### Inference
-For the inference I used another image: https://cloud.vast.ai/?ref_id=31110&creator_id=31110&name=ComfyUI%20FLUX.1.
+For the inference I used another [ComfyUI FLUX.1 on Vast.ai](https://cloud.vast.ai/?ref_id=31110&creator_id=31110&name=ComfyUI%20FLUX.1).
+
 It takes a while until you can access the workflow UI (~ around 5-10 minutes). After that, you can just upload the workflow.json file from this repo and start creating new images with your own prompts.
+
+
+## Acknowledgments  
+
+Big thanks to [ostris](https://github.com/ostris) for creating [ai-toolkit](https://github.com/ostris/ai-toolkit).
